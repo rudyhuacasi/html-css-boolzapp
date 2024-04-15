@@ -1,0 +1,86 @@
+/*mobile first*/
+/*mobile layout*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    height: 100vh;
+    display: flex;
+}
+.container{
+    width: 100%;
+    display: flex;
+}
+.sidebar{
+    display: none;
+}
+.content{
+    background-color: silver;
+    flex-grow: 1;
+} 
+.head{
+    background-color: #eaeaea;
+    height: 75px;
+}
+.message{
+    background-color: #f3eeeb;
+    height: 75px;
+}
+.conversation{
+    background-image: url(/img/mine.jpg);
+    background-position: center;
+    height: calc(100% - 150px);
+}
+/*mobile content*/
+
+/*tablet*/
+@media screen and (min-width: 576px){
+    /*layout*/
+    .sidebar{
+        flex-shrink: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    .conversation{
+        overflow-y: scroll;
+    }
+    /*content*/
+
+}
+
+@media screen and (min-width: 992px){
+    /*layout*/
+    body{
+        background-color: #d9dbd5;
+    }
+    header{
+        background-color: #049688;
+        height: 75px;
+    }    
+    .container{
+        width: 80%;
+        height: 90%;
+        margin: -40px auto;
+    }
+    .sidebar{
+        width: 300px;    
+    }
+    .notification{
+        background-color: #8fdafc;
+    }
+    .search{
+        background-color: #fafafa;
+    }
+    .chat{
+        background-color: #ffffff;
+        overflow-y: auto;
+    }
+    .persone{
+        list-style-type: none;
+    }
+    /*content*/
+
+}

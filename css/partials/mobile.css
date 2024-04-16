@@ -4,6 +4,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 main{
@@ -37,17 +40,17 @@ main{
 /*mobile content*/
 /*head*/
 .avatar-1{
-    width: 100%;
+    width: 55px;
+    height: 55px;
     object-fit: cover;
     border-radius: 50%;
-    margin-left: 10px;
+    margin: 0 10px;
+    aspect-ratio: 1/1;
 }
 .dis-f{
     display: flex;
+    align-items: center;
     width: 60%;
-}
-.wid-11{
-   width: 20%;
 }
 .mar-l-15{
     margin-left: 15px;
@@ -68,141 +71,51 @@ main{
     justify-content: space-between;
     align-items: center;
 }
-/*tablet*/
-@media screen and (min-width: 576px){
-    /*layout*/
-    .notification,
-    .search{
-        display: none;
-    }
-    .sidebar{
-        width: 10%;
-        flex-shrink: 0;
-        display: flex;
-        flex-direction: column;
-    }
-    .conversation{
-        overflow-y: scroll;
-    }
-    /*content*/
-    .bor{
-        border-right: 2px solid silver;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .bar{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    .avatar-io{
-        width: 80%;
-        object-fit: cover;
-        border-radius: 50%;
-    }
-    .dis-n{
-        display: none;
-    }
-    .avatar-1{
-        width: 100%;
-        object-fit: cover;
-        border-radius: 50%;
-        margin-left: 10px;
-    }
-    .dis-f{
-        display: flex;
-        width: 60%;
-    }
-    .wid-11{
-       width: 14%;
-    }
-    .mar-l-15{
-        margin-left: 15px;
-    }
-    .mar-7{
-        margin: 7px 0;
-    }
-    .lor-sil{
-        font-size: 15px;
-        color: #b1b1b1;
-    }
-    .mar-10{
-        margin: 0 10px;
-        color: #b1b1b1;
-    }
+/*conversation*/
+.conversation{
+    padding: 2rem 1rem;
 }
-
-@media screen and (min-width: 992px){
-    /*layout*/
-    body{
-        background-color: #d9dbd5;
-    }
-    header{
-        background-color: #049688;
-        height: 75px;
-    }    
-    .container{
-        width: 80%;
-        height: 90%;
-        margin: -40px auto;
-    }
-    .sidebar{
-        width: 300px;    
-    }
-    .notification{
-        background-color: #8fdafc;
-    }
-    .search{
-        background-color: #fafafa;
-    }
-    .chat{
-        background-color: #ffffff;
-        overflow-y: auto;
-    }
-    .persone{
-        list-style-type: none;
-    }
-    /*content*/
-    .bor{
-        justify-content: space-between;
-    }
-    .avatar-io{
-        width: 20%;
-        object-fit: cover;
-        border-radius: 50%;
-    }
-    .avatar-io,
-    .mar-10{
-        margin: 0 10px;
-        color: #b1b1b1;
-    }
-    .notification,
-    .search,
-    .dis-n{
-        display: block;
-    }
-    .avatar-1{
-        width: 100%;
-        object-fit: cover;
-        border-radius: 50%;
-        margin-left: 10px;
-    }
-    .dis-f{
-        display: flex;
-        width: 60%;
-    }
-    .wid-11{
-       width: 14%;
-    }
-    .mar-l-15{
-        margin-left: 15px;
-    }
-    .mar-7{
-        margin: 7px 0;
-    }
-    .lor-sil{
-        font-size: 15px;
-        color: #b1b1b1;
-    }
+.message-right{
+    display: flex;
+    justify-content: flex-end;
+}
+.square{
+    width: 80%;
+    padding: 10px;
+    border-radius: 25px;
+    display: flex;
+    margin: 10px 0;
+}
+.green{
+    background-color: #d4f9bb;
+}
+.white{
+    background-color: white;
+}
+.fa-chevron-down{
+    color: silver;
+}
+.info-messaggi{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 5px;
+}
+.message{
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.scrivi{
+    width: 100%;
+    height: 45px;
+    border: 0;
+    border-radius: 10px;
+    padding: 1rem;
+}
+.fa-face-smile,
+.fa-microphone{
+    display: none;
 }
